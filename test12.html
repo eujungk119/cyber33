@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>관종자가진단 test 1</title>
+	<script src="https://use.typekit.net/dcf1ame.js"></script>
+	<script>
+		try{Typekit.load({ async: true });}catch(e){}
+			
+	</script>
+	<style type="text/css">
+	.tk-source-han-serif-korean{font-family:"source-han-serif-korean",serif;}
+	img{display: block;
+		margin-right: auto;
+		margin-left: auto;}
+
+	h4{margin-left: 30px;
+		font-weight: 800;}
+		html,body {padding:0;margin:0;
+		font-family: 'source-han-serif-korean', serif; 
+}
+	}
+	.wrap {
+	  font:12px Arial, san-serif;
+	}
+	tbody tr td:first-child {
+			text-align: left;
+			margin-right: 3em;}
+	input[type="radio"]{visibility: hidden;}
+	li input[type="radio"]:after {
+		width:2em; height:2em;
+		border-radius:1em;
+		background-color: #fff;
+		display: inline-block;
+		margin: auto;
+		left:-1em;
+		visibility: visible;
+		border: 1.5px solid #8d8d8e;
+		content:'';}
+
+	li input[type='radio']:checked:after{
+		content: '';
+		background-color:#ffde00;
+		display: inline-block;
+		visibility: visible;
+		border: 1.5px solid #8d8d8e;
+	}
+	.question {
+			font-weight: 500;
+			font-family: 'Noto Sans KR', sans-serif;
+			vertical-align: middle;
+			text-align: center;
+			color: white;
+			font-size: 1em;
+			width: 800px;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+
+		}
+	form .likert {
+		background-color: red;
+	  list-style:none;
+	  width:800px;
+
+	  padding:0 0 35px;
+	  display:block;
+	  border-bottom:2px;
+	  margin: auto;
+	  left:calc(50% - 400px); 
+
+	}
+	form .likert:last-of-type {border-bottom:0;}
+
+	form .likert li {
+	  display:inline-block;
+	  width:19%;
+	  text-align: center;
+	  vertical-align: top;
+
+	}
+	input[type="radio"] {visibility: hidden;}
+		input[type="radio"]:after {
+			width:2em;
+			height: 2em;
+			border-radius: 2em;
+			position: relative;
+
+			background-color: #000;
+			content: '';
+			display: inline-block;
+			visibility: visible;
+			border: 2px solid #8d8d8d;
+			
+		}
+		input[type="radio"]:checked:after{
+			
+			background-color: #fff;
+			content: '';
+			display: inline-block;
+			visibility: visible;
+			border: 2px solid #8d8d8d;
+			text-align: center;
+		}
+	form .likert li label{
+		width:100%;
+	}
+	form .buttons {
+	  margin:50px 0;
+	  padding:0 4.25%;
+	  text-align:right
+	} 
+	
+	#survey{
+			width:500px; 
+			height:400px; 
+			background: #ddd; 
+			display: none;
+			position: absolute; 
+			margin:auto; 
+			left:calc(50% - 250px); 
+			top:100px;}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<form id="Ctest">
+			<table class="tabel" cellspacing="0">
+		  		<h4 class="likert-header">Test 1. 넌씨눈 형</h4>
+			 	<thead>
+					<tr>
+						<td class="qtop">  </td>
+						<td class="qtop">네</td>
+						<td class="qtop">아니오</td>					
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="question">1. 나는 평소에 눈치 없다는 소리를 종종 듣는다.</td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="5"/></td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="0"/></td>
+					</tr>
+					<tr>
+						<td class="question">2. 나는 어떤 때와 장소에서든 내 의견을 말할 수 있다.</td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="5"/></td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="0"/></td>
+					</tr>
+					<tr>
+						<td class="question">3. 나는 상대방의 말의 속 뜻을 깊게 생각하지 않는다.</td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="5"/></td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="0"/></td>
+					</tr>
+					<tr>
+						<td class="question">4. 나는 내 주변에서 무슨 일이 일어나든 간에 관심이 없다.</td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="5"/></td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="0"/></td>
+					</tr>
+					<tr>
+						<td class="question">5. 나는 변화에 둔감한 편이다.</td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="5"/></td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="0"/></td>
+					</tr>
+					<tr>
+						<td class="question">6. 나는 다른 사람의 말에 틀린 것이 있으면 사소한 것이라도 고쳐주려고 한다.</td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="5"/></td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="0"/></td>
+					</tr>
+					<tr>
+						<td class="question">7. 누가 나를 닮은 연예인을 물어본다면 2명이상 대답할 수 있다.</td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="5"/></td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="0"/></td>
+					</tr>
+					<tr>
+						<td class="question">8. 불행한 가정의 기사를 보면 우리집은 행복해서 다행이라고 생각한다.</td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="5"/></td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="0"/></td>
+					</tr>
+					<tr>
+						<td class="question">9. 솔직함이 내 매력 중 하나라고 생각한다.</td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="5"/></td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="0"/></td>
+					</tr>
+					<tr>
+						<td class="question">10. 친구가 이유없이 나에게 짜증을 내거나 화낸다고 생각한 적이 종종있다. </td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="5"/></td>
+						<td class="qbutton"><input class="q1" type="radio" name="q1" value="0"/></td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	
+
+	
+
+
+
+	
+<button id="action2">계산하기</button>
+<script type="text/javascript">
+
+	var total = 0;
+	action2.onclick = function(){ calculate(); }
+	function calculate(){
+
+		var t = document.getElementsByClassName("q1");
+		for(var i=0; i < t.length; i++){
+			console.log(t[i], t[i].checked);
+			if(t[i].checked == true){
+				total += parseInt(t[i].value);
+			}
+		}
+
+		var x = document.getElementsByClassName("q2");
+		for(var i=0; i < t.length; i++){
+			console.log(t[i], t[i].checked);
+			if(t[i].checked == true){
+				total += parseInt(t[i].value);
+			}
+		}
+
+		var y = document.getElementsByClassName("q3");
+		for(var i=0; i < t.length; i++){
+			console.log(t[i], t[i].checked);
+			if(t[i].checked == true){
+				total += parseInt(t[i].value);
+			}
+		}
+
+		var z = document.getElementsByClassName("q4");
+		for(var i=0; i < t.length; i++){
+			console.log(t[i], t[i].checked);
+			if(t[i].checked == true){
+				total += parseInt(t[i].value);
+			}
+		}
+
+		var b = document.getElementsByClassName("q5");
+		for(var i=0; i < t.length; i++){
+			console.log(t[i], t[i].checked);
+			if(t[i].checked == true){
+				total += parseInt(t[i].value);
+			}
+		}
+
+		
+
+		console.log("총" + total + "점입니다." );	
+	}
+	
+
+</script>
+</body>
+</html>

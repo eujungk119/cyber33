@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>관종자가진단 test 1</title>
+	<script src="https://use.typekit.net/dcf1ame.js"></script>
+	<script>
+		try{Typekit.load({ async: true });}catch(e){}
+			
+	</script>
+	<style type="text/css">
+	.tk-source-han-serif-korean{font-family:"source-han-serif-korean",serif;}
+	img{display: block;
+		margin-right: auto;
+		margin-left: auto;}
+
+	h4{margin-left: 30px;
+		font-weight: 800;}
+		html,body {padding:0;margin:0;
+		font-family: 'source-han-serif-korean', serif; 
+}
+	}
+	.wrap {
+	  font:12px Arial, san-serif;
+	}
+input[type="radio"]{visibility: hidden;}
+	li input[type="radio"]:after {
+		width:2em; height:2em;
+		border-radius:1em;
+		background-color: #fff;
+		display: inline-block;
+		margin: auto;
+		left:-1em;
+		visibility: visible;
+		border: 1.5px solid #8d8d8e;
+		content:'';}
+
+	li input[type='radio']:checked:after{
+		content: '';
+		background-color:#ffde00;
+		display: inline-block;
+		visibility: visible;
+		border: 1.5px solid #8d8d8e;
+	}
+	form .statement {
+		text-align: center;
+		font-family: 'source-han-serif-korean', serif; 
+		font-weight: 800;
+	  display:block;
+	  font-size: 1.5em;
+	  font-weight: bold;
+	  padding: 30px 0 0 4.25%;
+	  margin-bottom:40px;
+	}
+	form .likert {
+		background-color: red;
+	  list-style:none;
+	  width:800px;
+
+	  padding:0 0 35px;
+	  display:block;
+	  border-bottom:2px;
+	  margin: auto;
+	  left:calc(50% - 400px); 
+
+	}
+	form .likert:last-of-type {border-bottom:0;}
+
+	form .likert li {
+	  display:inline-block;
+	  width:19%;
+	  text-align: center;
+	  vertical-align: top;
+
+	}
+	form .likert li input[type=radio] {
+	  display:block;
+	  position:relative;
+	  top:-10px;
+	  left:50%;
+	  margin-left:-6px;	  
+	}
+	form .likert li label{
+		width:100%;
+	}
+	form .buttons {
+	  margin:50px 0;
+	  padding:0 4.25%;
+	  text-align:right
+	} 
+	
+	#survey{
+			width:500px; 
+			height:400px; 
+			background: #ddd; 
+			display: none;
+			position: absolute; 
+			margin:auto; 
+			left:calc(50% - 250px); 
+			top:100px;}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+  <h4 class="likert-header">Test 1. 넌씨눈 형</h4>
+ 
+	 <form action="">
+	    <label class="statement">1. 나는 평소에 눈치 없다는 소리를 종종 듣는다.</label>
+	    <ul class='likert'>
+	      <li>
+	        <input type="radio" name="likert" value="5" id="yes1" class="q1">
+	        <label for="yes1">아주 그렇다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="4" id="yes2" class="q1">
+	        <label for="yes2">그렇다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="3" id="idk" class="q1">
+	        <label for="idk">잘 모르겠다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="2" id="nope1" class="q1">
+	        <label for="nope1">그렇지않다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="1" id="nope2" class="q1">
+	        <label for="nope2">절대 그렇지않다</label>
+	      </li>
+	    </ul>
+	</form>
+
+	<form action="">
+	    <label class="statement">2. 나는 어떤 때와 장소에서든 내 의견을 말할 수 있다.</label>
+	    <ul class='likert'>
+	      <li>
+	        <input type="radio" name="likert" value="5" id="yes1" class="q2">
+	        <label for="yes1">아주 그렇다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="4" id="yes2" class="q2">
+	        <label for="yes2">그렇다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="3" id="idk" class="q2">
+	        <label for="idk">잘 모르겠다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="2" id="nope1" class="q2">
+	        <label for="nope1">그렇지않다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="1" id="nope2" class="q2">
+	        <label for="nope2">절대 그렇지않다</label>
+	      </li>
+	    </ul>
+	</form>
+
+	<form action="">
+	    <label class="statement">3. 나는 내 주변에서 무슨 일이 일어나든 간에 관심이 없다.</label>
+	    <ul class='likert'>
+	      <li>
+	        <input type="radio" name="likert" value="5" id="yes1" class="q3">
+	        <label for="yes1">아주 그렇다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="4" id="yes2" class="q3">
+	        <label for="yes2">그렇다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="3" id="idk" class="q3">
+	        <label for="idk">잘 모르겠다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="2" id="nope1" class="q3">
+	        <label for="nope1">그렇지않다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="1" id="nope2" class="q3">
+	        <label for="nope2">절대 그렇지않다</label>
+	      </li>
+	    </ul>
+	</form>
+
+	<form action="">
+	    <label class="statement">4. 나는 변화에 둔감한 편이다.</label>
+	    <ul class='likert'>
+	      <li>
+	        <input type="radio" name="likert" value="5" id="yes1" class="q4">
+	        <label for="yes1">아주 그렇다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="4" id="yes2" class="q4">
+	        <label for="yes2">그렇다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="3" id="idk" class="q4">
+	        <label for="idk">잘 모르겠다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="2" id="nope1" class="q4">
+	        <label for="nope1">그렇지않다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="1" id="nope2" class="q4">
+	        <label for="nope2">절대 그렇지않다</label>
+	      </li>
+	    </ul>
+	</form>
+
+	<form action="">
+	    <label class="statement">5. 나는 다른 사람의 말에 틀린 것이 있으면 사소한 것이라도 고쳐주려고 한다.</label>
+	    <ul class='likert'>
+	      <li>
+	        <input type="radio" name="likert" value="5" id="yes1" class="q5">
+	        <label for="yes1">아주 그렇다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="4" id="yes2" class="q5">
+	        <label for="yes2">그렇다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="3" id="idk" class="q5">
+	        <label for="idk">잘 모르겠다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="2" id="nope1" class="q5">
+	        <label for="nope1">그렇지않다</label>
+	      </li>
+	      <li>
+	        <input type="radio" name="likert" value="1" id="nope2" class="q5">
+	        <label for="nope2">절대 그렇지않다</label>
+	      </li>
+	    </ul>
+	</form>
+
+
+
+	
+<button id="action2">계산하기</button>
+<script type="text/javascript">
+
+	var total = 0;
+	action2.onclick = function(){ calculate(); }
+	function calculate(){
+
+		var t = document.getElementsByClassName("q1");
+		for(var i=0; i < t.length; i++){
+			console.log(t[i], t[i].checked);
+			if(t[i].checked == true){
+				total += parseInt(t[i].value);
+			}
+		}
+
+		var x = document.getElementsByClassName("q2");
+		for(var i=0; i < t.length; i++){
+			console.log(t[i], t[i].checked);
+			if(t[i].checked == true){
+				total += parseInt(t[i].value);
+			}
+		}
+
+		var y = document.getElementsByClassName("q3");
+		for(var i=0; i < t.length; i++){
+			console.log(t[i], t[i].checked);
+			if(t[i].checked == true){
+				total += parseInt(t[i].value);
+			}
+		}
+
+		var z = document.getElementsByClassName("q4");
+		for(var i=0; i < t.length; i++){
+			console.log(t[i], t[i].checked);
+			if(t[i].checked == true){
+				total += parseInt(t[i].value);
+			}
+		}
+
+		var b = document.getElementsByClassName("q5");
+		for(var i=0; i < t.length; i++){
+			console.log(t[i], t[i].checked);
+			if(t[i].checked == true){
+				total += parseInt(t[i].value);
+			}
+		}
+
+		
+
+		console.log("총" + total + "점입니다." );	
+	}
+	
+
+</script>
+</body>
+</html>
